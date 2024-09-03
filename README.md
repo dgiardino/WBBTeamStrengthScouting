@@ -1,0 +1,5 @@
+This is a passion project of mine that can be used for college basketball teams. It takes a CSV file of a litst of box scores for a basketball team to try and find what stats are the most important for the teams winning.
+The model uses a "W/L" column, a binary variable where a win is signified with a 1 and a loss is signified with a 0. The data is encoded using a scaler then split into test, train and validation data then run through a GridsearchCV algorithm
+consisting of many different models to try and find the most accurate model to the data. Using the best model the stats are listed in terms of feature importance to showcase which stats impact winning the most.
+The top 4 stats in terms of feature importance are then put into a decision tree to show all of the different "paths" a team takes towards wins and losses and the associated entropy. The overall purpose of this project is for teams to be able
+to see where their strengths are and compare them against the weaknesses of an upcoming opponent.
